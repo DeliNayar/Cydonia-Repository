@@ -1,9 +1,9 @@
 Welcome to Cydonia. This sim is a neutral battleground that offers Free For All combat with NPC bots and other players. Before you start please read these rules and guidelines for play here.
 
 Need Help? Contact one of us for assistance or moderation:
-􀀄
-􀀅
-􀀃
+􀀁
+􀀀
+􀀂
 --------------------------------------------------------------------------------------------------------------------------------
 Rules of Conduct:
 These are rules that will govern everyone's behavior in the sim. If you break any of these you will be banned from the sim for an indefinite period of time.
@@ -23,8 +23,8 @@ This is an adult sim for adults. Don't wear an avatar that makes you look under 
 5) Follow moderator instructions, don't argue.
 We are the ultimate authority in the sim. You are a guest. If you are told to stop doing something, comply or be removed. Don't give us back-sas or we will very quickly lose patience with you.
 
-6) Wear what you want.
-We have no dress code and Cydonia is an adult rated region. Be butt-naked or fully armored up, it makes no difference to us. Don't harass people over what they wear or we will hurt your balls, and not in a fun way.
+6) Wear what you want within reason.
+We have no dress code and Cydonia is an adult rated region. Be butt-naked or fully armored up, it makes no difference to us granted you aren't being obnoxious. Don't harass people over what they wear or we will hurt your balls, and not in a fun way.
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -34,13 +34,13 @@ GENERAL CONSIDERATIONS:
 
 -FUN FOR EVERYONE is paramount. If you are doing a type of combat just to specifically upset other people intentionally, rethink your actions, because pissing off everyone to the point where they won't want to fight here anymore will make us upset at you specifically for killing our traffic.
 
--Don't obsess over the point system. We have it there as a fun objective, but if you are losing your mind trying to get a high score by any means possible, including but not limited to breaking these rules when you think we aren't looking, we will make fun of you and remove you from the point system entirely or just ban you from the sim for being a pain in the ass. If you are that sweaty, you are not the kind of player we want here, touch grass.
-
 -Moderators have the right to tell you to stop doing something, no questions asked. In the nature of saving time, this list has been provided to get things and activities out of the way that we do not want to see on the sim full-stop. Things and behaviors NOT listed here are still subject to our approval or denial.
+
+-SLMC VETERANS: Be gentle with new players. Cydonia tends to get fresh blood in the community from time to time. They may not understand the intricacies or limits of SLMC combat and may only have commercial gear. Be patient with them, and don't go out of your way to floor them. We may not rules lawyer them if they aren't causing harm, so please don't be an ass over stuff they might use.
 
 -You will be given a verbal warning if you are doing something we deem unacceptable and it's worth the time talking to you. If you persist you will be locked in the spawn or sent off sim until you listen. Generally speaking if you are getting auto-returned, ejected or whatnot, maybe you should rethink what you are doing. If you want to argue semantics with us and we are not in the mood to play lawyer, we will just curb you immediately.
 
--The Combat Zone should GENERALLY be kept teamless or "dog-pile free". We have no true way of strictly enforcing this and follow the honor system. Don't bring in 8 people and then all team up against a handful of lonewolves, that's not fun for anyone. Working together with groups of 2-4 people is perfectly fine. Please self enforce your groups so we don't have to.
+-The Combat Zone should generally be kept teamless for PvP if there are lone-wolves. PvE teaming up is perfectly fine at all scales. Group vs. Group fights are welcome.
 
 -Vehicles are allowed and encouraged, however don't be ridiculous in which ones you decide to use. Using a 300HP MBT against a couple brand new lone wolves won't be fun for anyone.
 
@@ -51,18 +51,22 @@ THE ABSOLUTE BARE MINIMUM RULES:
 -Don't use bullshit that's globally not allowed (Autokillers, NPVs, etc.).
 -Prejump and hardfall must always be enabled (Nimble OFF).
 -No outlandish movement enhancers. If you have any doubts, ask a staff member.
--If you are using a smaller than average avatar, you may not use bullets that do more than 50 damage.
+-If you are using a smaller than average avatar, you may not use bullets that do more than 50 damage. i.e. Yinglets
 
 
 1) General equipment rules
 
--Jetpacks/Jumppacks/Floatpacks and whatever else people want to call them ARE allowed, but subject to scrutiny if they go crazy. If you act like a plane, people will treat you like one. Only use a semi-automatic projectile weapon, or something similar and/or melee weapons when using a jetpack. Do not use raycast weapons or full-autos with a jetpack.
+-Jetpacks/Jumppacks/Floatpacks and whatever else people want to call them are permitted granted a semi-automatic (or less), non-raycast and non exploding, weapon is used with them.
+
+-Grapples are allowed, but must reel you in at run-speed or slower. At no point should grapples be able to yank you faster than run speed horizontally.
 
 -Explosives and area of effect munitions must have a raycast check beyond 1 meter to avoid blowing up people through walls. Explosives should have a reasonable size depending on the platform they are fired from.
 
--Melee weapons should have a reasonable range and a raycast check. Please consider adding a cooldown to your melees. Do not have your melee weapons fling you around when you use them.
+-"Haze" on raycast weapons may not do 100 avatar damage unless the weapon's ROF is 60 rounds per minute or less. Haze damage on weapons greater than this must be 30 or less.
 
--Breaching is not permitted in Grey Basin due to the way the map was designed.
+-Sensor/Agentlist based shotguns are not permitted. Use physical bullets, or multiple, non-haze, raycasts.
+
+-Melee weapons should have a reasonable range and a raycast check. Please consider adding a cooldown to your melees. Do not have your melee weapons fling you around when you use them.
 
 -’Flak’ is only allowed to be used against aircraft, and anything we deem as aircraft. Flak can only be vehicle fired and not from any form of infantry weapon or auto-turret.
 
@@ -74,8 +78,6 @@ THE ABSOLUTE BARE MINIMUM RULES:
 2) Vehicle and deployable rules
 -LBA based health systems are the only ones permitted here. Legacy armor is not permitted.
 --All items rezzed out must be able to be destroyed at anytime with LBA damage. Don't make your stuff inverse unless it is a breaching hole. 
-
--Deployable teleporters are not permitted.
 
 -Don't deploy gigantic walls and/or shields. If we need help adding to the sim's design, we'll ask you. 
 --To clarify, using a bunch of small deployables is fine, this rule is about those stupid huge T'koi/Coercion style bubbleshields, walls or bunkers with hundreds of HP.
