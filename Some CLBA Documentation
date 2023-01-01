@@ -1,0 +1,50 @@
+Component Listen Based Armor (CLBA) is a take on vehicle health that defers from the usual method of a singular HP pool that needs to be reduced to 0 in order for the vehicle to die. CLBA aims to be a "side-grade", coexisting and compatible with all existing forms of LBA. CLBA is not a simple task to implement into existing regular LBA vehicles without extreme modification.
+
+The system was designed with "rezzed out" vehicles in mind and may not work correctly with attachment based, or respawning vehicles out of the box unless extensive modifications are made to the core script. While not restricted to vehicles, the system was designed around the intention of vehicles being used with it. Due to the modular nature however, feel free to experiment.
+
+A CLBA vehicle will need a couple things that differs majorly from a standard LBA vehicle to function:
+
+1)A "Dummy": The Dummy is a primmed out model depicting everything the CLBA script can "see" of itself. Each prim on the dummy MUST be named what it is (i.e. "Front hull armor" "Ammo"). Multiple prims named the same thing will be counted as the same object, so you can have 10 prims composing "hull side armor" and it will all count as the same in the script. 
+When a CLBA object is attacked, it will mirror the angle of attack on this dummy with a raycast. The damage is then calculated with anything this raycast hits. It is extremely critical that this dummy is 100% accurate to the visual design of your vehicle within reason, slopes and flat angles are considered. The dummy must also contain the critical components to your vehicles function. This can be as complex or as simple as you want, however its good practice to have at least 2 ways for the vehicle to be destroyed. The M60, as an example, can be destroyed by eliminating the "crew" modules, the ammo, or have it burn down by method of fuel fires. The Dullahan, as an example can be destroyed similarly by knocking out its power supplies or its computers. These are just examples though.
+
+📢!!THE DUMMY MUST HAVE IT'S ROOT LINED UP EXACTLY WITH YOUR HITBOXES ROOT OR THINGS WILL BE OFFSET. HOLY SHIT THIS IS IMPORTANT!!📢
+We found using a non-component, specific root prim works perfectly for this. Ensure through testing that the dummy, your hitbox and visual model all align perfectly on the same world position and rotation.
+
+2)Methods for core components in your vehicle to be turned off or weakened: The main gimmick of CLBA is that when components inside the vehicle are damaged or destroyed, the vehicle's performance is degraded. Some examples would be reload times if a loader or autoloader is damaged or destroyed, or a turret ring on a tank preventing the turret from turning. Damaging tracks to prevent movement is a classic example as well.
+
+
+Once you have a dummy model for your vehicle, you need to fill out the armor values at the top of the core CLBA script. This script goes inside your traditional hitbox. The hitbox obviously needs to encompass the entire visual portion of the vehicle.
+
+list components=[ //Component,  hp,maxhp,  Density factor,  Chemical damage reduction multiplier
+"",                             00,00,      0.0,            1.0
+];
+
+This is where the script determines the values of everything on the dummy. You will need to create additional lines exactly as written for the components.
+
+Key: 
+Component: The EXACT name of the prim on the dummy. This can be an armor face, or a crewmember. Anything the script needs to see and be considered hittable.
+
+hp,maxhp: The current HP and Max HP of the component respectfully. HP determines more than just the health of the item, but also plays into the density factory. MaxHP can be set to -1 to make the component invincible, but still solid. This is used for hulls, armor and other similar parts. 
+
+Density Factor: This is a value that will determine how "easily" a penetrating item can go through the component. High density components "absorb" more of the damage dealt to them into their own HP. As an example: 100hp with 0.2 density will need >20LBA to pen, and will absorb 20% of the damage given (so if you do 50 to it, it'll absorb 10 from it's HP and pass through the rest). Likewise, a component with a density of 0.9 will absorb 90% of the damage into it's HP.
+📢KEEP IN MIND these values assume a direct, 0 degree, attack. Any kind of angle to the attack WILL reduce the damage of the penetrator. Do NOT give invincible (-1 maxhp) components very high density factors. This will make the vehicle almost impossible to kill and be very noticeable.📢
+
+Chemical damage reduction multiplier: This is a value used for "composite armor" or similar protections. Anything damaging the vehicle that does not have "ap" in it's name is considered for this multiplier. 1.0 is standard meaning nothing will be changed. A multiplier of 2.0 will reduce the damage of non-hp damage by half. This can also work conversely, if you set the chemical reduction factor to 0.5 for instance it will take MORE damage from non-AP rounds.
+
+
+An example:
+list components=[ //Component,  hp,maxhp,  Density factor,  Chemical damage reduction multiplier
+"Hull upper glacis",            100,-1,         0.10,        1.5, //On a 0 degree angle of attack, it would take 10LBA to penetrate this plate by a regular AP round
+"Hull lower glacis",            100,-1,         0.05,        1.1,
+"Hull side armour",             100,-1,         0.05,        1.0,
+"Turret ring",                  40,     40,     0.5,            1.0,
+"Gun breach",                   40,     40,     0.9,            1.0,
+"Turret ammunition",            20,     20,     0.75,           1.0,
+"Commander",                    10,     10,     0.8,            1.0,
+"Loader",                       10,     10,     0.8,            1.0,
+"Gunner",                       10,     10,     0.8,            1.0,
+"Driver",                       10,     10,     0.8,            1.0
+
+
+That's really all there is to it. The system can be as complex or as simple as the scripter wishes.
+A simple example of CLBA being used for something could be a mounted turret with shields on the front of it. The shield itself can resist bullets but rockets can penetrate it and kill the "gunner" behind it (unsitting an killing them). Or the actual weapon being jammed by damage taken to the front of it. The options are as many as the creativity of the person implementing it.
