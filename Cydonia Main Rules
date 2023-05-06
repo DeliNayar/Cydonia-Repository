@@ -56,7 +56,7 @@ THE ABSOLUTE BARE MINIMUM RULES:
 
 1) General equipment rules
 
--Jetpacks/Jumppacks/Floatpacks and whatever else people want to call them are permitted granted a semi-automatic (or less), non-raycast and non exploding, weapon is used with them.
+-Jetpacks/Jumppacks/Floatpacks and whatever else people want to call them are not permitted.
 
 -Grapples are allowed, but must reel you in at run-speed or slower. At no point should grapples be able to yank you faster than run speed horizontally.
 
@@ -68,11 +68,15 @@ THE ABSOLUTE BARE MINIMUM RULES:
 
 -Melee weapons should have a reasonable range and a raycast check. Please consider adding a cooldown to your melees. Do not have your melee weapons fling you around when you use them.
 
--’Flak’ is only allowed to be used against aircraft, and anything we deem as aircraft. Flak can only be vehicle fired and not from any form of infantry weapon or auto-turret.
+-’Flak’ is not permitted.
 
 -Mines and remote explosives must be able to be destroyed from a single collision with a bullet.
 
 -Anti tank munitions should have values proportional to their size, firepower, reload rate and firerate.
+
+-AOE damaging items such as fire, acid, blood, w/e must be temp and not linger for longer than the temp pool, or 1 minute.
+
+-Infantry weapons that fire explosive munitions may only be used from a semi-automatic weapon or less.
 
 
 2) Vehicle and deployable rules
