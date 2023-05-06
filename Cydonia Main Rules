@@ -74,7 +74,7 @@ THE ABSOLUTE BARE MINIMUM RULES:
 
 -Anti tank munitions should have values proportional to their size, firepower, reload rate and firerate.
 
--AOE damaging items such as fire, acid, blood, w/e must be temp and not linger for longer than the temp pool, or 1 minute.
+-Lingering AOE damaging items such as acid, blood, electric water, etc. must be temp and not last for longer than the temp pool, or 1 minute.
 
 -Infantry weapons that fire explosive munitions may only be used from a semi-automatic weapon or less.
 
